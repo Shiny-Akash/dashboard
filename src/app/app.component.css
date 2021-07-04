@@ -38,3 +38,8 @@ a:active {
 a.selectedLink {
     color: rgb(9, 218, 207);
 }
+
+mat-panel-title.highlight {
+    background-color: rgb(9, 218, 207);
+    padding: 10px;
+}
