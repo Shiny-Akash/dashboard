@@ -10,12 +10,14 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { EmptypageComponent } from './emptypage/emptypage.component';
 import { ProductWaterQualityComponent } from './product-water-quality/product-water-quality.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmptypageComponent,
-    ProductWaterQualityComponent
+    ProductWaterQualityComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
