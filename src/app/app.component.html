@@ -22,7 +22,7 @@
             <h3>Kusu island</h3>
             <ul>
                 <li>Sea Water Quality</li>
-                <li><a href="#">Product Water Quality</a></li>
+                <li><a routerLink="/something">Product Water Quality</a></li>
                 <li>System Power Consumption</li>
                 <li>Brine Discharge Quality</li>
                 <li>Single Line Diagram</li>
@@ -41,6 +41,8 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
+
+        <router-outlet></router-outlet>
 
         <mat-grid-list cols="4" rowHeight="200px" gutterSize="50px">
             <mat-grid-tile>

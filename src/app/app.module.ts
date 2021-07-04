@@ -8,10 +8,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { EmptypageComponent } from './emptypage/emptypage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmptypageComponent
   ],
   imports: [
     BrowserModule,
