@@ -9,11 +9,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { EmptypageComponent } from './emptypage/emptypage.component';
+import { ProductWaterQualityComponent } from './product-water-quality/product-water-quality.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmptypageComponent
+    EmptypageComponent,
+    ProductWaterQualityComponent
   ],
   imports: [
     BrowserModule,

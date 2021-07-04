@@ -34,7 +34,3 @@ a {
 a:active {
     color: rgb(9, 218, 207);
 }
-
-mat-grid-list {
-    margin: 10px;
-}
