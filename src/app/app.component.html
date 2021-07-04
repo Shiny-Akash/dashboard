@@ -1,0 +1,79 @@
+
+<header>
+    <button class="menubutton" (click)="menubar.toggle()">
+        <mat-icon>menu</mat-icon>
+        <p>MENU</p>
+    </button>
+    <p class="title">
+        DE CONTAINERISED DESALINATION SYSTEM
+    </p>
+</header>
+
+<mat-sidenav-container>
+    <mat-sidenav #menubar mode="side">
+        
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    2D DASHBOARD
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <h3>Kusu island</h3>
+            <ul>
+                <li>Sea Water Quality</li>
+                <li><a href="#">Product Water Quality</a></li>
+                <li>System Power Consumption</li>
+                <li>Brine Discharge Quality</li>
+                <li>Single Line Diagram</li>
+            </ul>
+
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    3D DASHBOARD
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <mat-grid-list cols="4" rowHeight="200px" gutterSize="50px">
+            <mat-grid-tile>
+                <img src="assets/Conductivity.png" width="100%" height="200px">
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <img src="assets/Salinity.png" width="100%" height="200px">
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <img src="assets/Turrbidity.png" width="100%" height="200px">
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <img src="assets/PH.png" width="100%" height="200px">
+            </mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-grid-list cols="3" rowHeight="300px" gutterSize="50px">
+            <mat-grid-tile>
+                <img src="assets/Map.png" width="100%" height="300px">
+            </mat-grid-tile>
+            <mat-grid-tile style="background-color: white; color: black; font-size: 25px;">
+                <p>Chart</p>
+            </mat-grid-tile>
+            <mat-grid-tile style="background-color: white; color: black; font-size: 25px;">
+                <p>Weather Chart</p>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-grid-list cols="1" rowHeight="400px" gutterSize="50px">
+            <mat-grid-tile style="background-color: white; color: black; font-size: 25px;">
+                <p>Tide Chart</p>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

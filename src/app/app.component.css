@@ -1,0 +1,40 @@
+header {
+    background-color: black;
+    vertical-align: middle;
+}
+
+.menubutton {
+    display: inline-block;
+    width: 15%;
+    background-color: rgb(9, 218, 207);
+}
+
+.title {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 85%;
+    text-align: center;
+    margin: 0px;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 15%;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+a:active {
+    color: rgb(9, 218, 207);
+}
+
+mat-grid-list {
+    margin: 10px;
+}
