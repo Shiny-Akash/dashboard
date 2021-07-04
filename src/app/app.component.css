@@ -34,3 +34,7 @@ a {
 a:active {
     color: rgb(9, 218, 207);
 }
+
+a.selectedLink {
+    color: rgb(9, 218, 207);
+}
