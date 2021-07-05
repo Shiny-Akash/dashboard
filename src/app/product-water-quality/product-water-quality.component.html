@@ -1,37 +1,46 @@
 <mat-grid-list cols="12" gutterSize="25px">
     
     <!-- First Row -->
-    <mat-grid-tile colspan="3" rowspan="2">
-        <img src="assets/Conductivity.png" width="100%" height="100%">
-    </mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="2" *ngFor="let data of values;">
+        
+        <div style="min-width: 100%;">
+            <mat-grid-list cols="2" rowHeight="100px" gutterSize="0px">
 
-    <mat-grid-tile colspan="3" rowspan="2">
-        <img src="assets/Salinity.png" width="100%" height="100%">
-    </mat-grid-tile>
+                <mat-grid-tile rowspan="2" class="inner">
+                    <img src="{{data.logo}}" width="80%" height="80%">
+                </mat-grid-tile>
     
-    <mat-grid-tile colspan="3" rowspan="2">
-        <img src="assets/Turrbidity.png" width="100%" height="100%">
-    </mat-grid-tile>
+                <mat-grid-tile  class="inner">
+                    <p>{{data.name}}</p>
+                </mat-grid-tile>
     
-    <mat-grid-tile colspan="3" rowspan="2">
-        <img src="assets/PH.png" width="100%" height="100%">
+                <mat-grid-tile  class="inner">
+                    <div class="progress">
+                        <div class="value" [style.width.%]="data.value"></div>
+                        <div class="nonvalue" [style.width.%]="90 - data.value"></div>
+                    </div>
+                </mat-grid-tile>
+    
+            </mat-grid-list>
+        </div>
+
     </mat-grid-tile>
 
     <!-- Second Row -->
     <mat-grid-tile colspan="4" rowspan="2">
-        <img src="assets/Map.png" width="100%" height="100%">
+        <iframe [src]="getLocation()" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </mat-grid-tile>
     
-    <mat-grid-tile colspan="4" rowspan="2" style="background-color: white; color: black; font-size: 25px;">
+    <mat-grid-tile colspan="4" rowspan="2" class="outer">
         <p>Chart</p>
     </mat-grid-tile>
     
-    <mat-grid-tile colspan="4" rowspan="2" style="background-color: white; color: black; font-size: 25px;">
+    <mat-grid-tile colspan="4" rowspan="2" class="outer">
         <p>Weather Chart</p>
     </mat-grid-tile>
 
     <!-- third Row -->
-    <mat-grid-tile colspan="12" rowspan="2" style="background-color: white; color: black; font-size: 25px;">
+    <mat-grid-tile colspan="12" rowspan="2" class="outer">
         <p>Tide Chart</p>
     </mat-grid-tile>
     

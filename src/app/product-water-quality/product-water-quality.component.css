@@ -1,3 +1,29 @@
 mat-grid-list {
-    margin: 30px;
+    margin: 10px;
+}
+
+mat-grid-tile {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.progress {
+    height: 30px;
+    width: 90%;
+}
+
+div.value {
+    display: inline-block;
+    height: 100%;
+    background-color: rgb(24, 194, 194);
+    margin-right: 5%;
+}
+
+div.nonvalue {
+    display: inline-block;
+    height: 100%;
+    margin-left: 5%;
+    background-color: red;
 }
