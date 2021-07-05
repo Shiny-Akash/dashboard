@@ -16,7 +16,7 @@
     
                 <mat-grid-tile  class="inner">
                     <div class="progress">
-                        <div class="value" [style.width.%]="data.value"></div>
+                        <div class="value" [style.width.%]="data.value"><span>{{data.value}}%</span></div>
                         <div class="nonvalue" [style.width.%]="90 - data.value"></div>
                     </div>
                 </mat-grid-tile>

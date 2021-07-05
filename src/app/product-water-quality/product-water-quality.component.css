@@ -11,7 +11,9 @@ mat-grid-tile {
 
 .progress {
     height: 30px;
+    line-height: 30px;
     width: 90%;
+    text-align: center;
 }
 
 div.value {
@@ -19,6 +21,8 @@ div.value {
     height: 100%;
     background-color: rgb(24, 194, 194);
     margin-right: 5%;
+    font-size: 15px;
+    vertical-align: top;
 }
 
 div.nonvalue {
